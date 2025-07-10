@@ -15,7 +15,7 @@ use App\Http\Controllers\ContactsController;
 */
 
 //入力フォームページ
-Route::get('/contact',[ContactsController::class,'index'])->name('cotact.index');
+Route::get('/contact',[ContactsController::class,'index'])->name('contact.index');
 
 //確認フォームページ
 Route::post('/contact/confirm',[ContactsController::class,'confirm'])->name('contact.confirm');

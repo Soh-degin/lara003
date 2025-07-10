@@ -33,6 +33,11 @@ class ContactsController extends Controller
         'inputs' => $inputs,
         ]);
 
+    }
+
+    public function send(Request $request)
+    {
+        // バリデーション
         $request->validate([
         'email' => 'required|email',
         'title' => 'required',
