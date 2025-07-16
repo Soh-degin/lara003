@@ -19,6 +19,9 @@ class ContactsController extends Controller
         // バリデーションルールを定義
         // 引っかかるとエラーを起こしてくれる
         $request->validate([
+        'company' => 'required',
+        'name' => 'required',
+        'tell' => 'required',   
         'email' => 'required|email',
         'title' => 'required',
         'body' => 'required',
@@ -39,6 +42,9 @@ class ContactsController extends Controller
     {
         // バリデーション
         $request->validate([
+        'company' => 'required',
+        'name' => 'required',
+        'tell' => 'required',    
         'email' => 'required|email',
         'title' => 'required',
         'body' => 'required',

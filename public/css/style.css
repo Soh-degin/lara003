@@ -4,8 +4,7 @@ body {
 
 input[type="text"], input[type="email"], textarea { 
     background-color: #ccc;
-    padding: 10px; /* 入力フィールドの内側の余白を設定 */
-    margin: 0 0 0 auto; /* 入力フィールドの上下に余白を設定 */
+    padding: 10px; /* 入力フィールドの内側の余白を設定 */ 
     border: 1px solid #ccc; /* 入力フィールドの枠線を設定 */
     border-radius: 5px;
 }
@@ -19,7 +18,8 @@ hr {
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 30px;    
+    margin-top: 30px;
+    gap: 30px;    
 }
 
 .error-message {
